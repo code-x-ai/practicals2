@@ -25,8 +25,9 @@ def fast_endpoint():
         "type": "fast",
         "data": [1, 2, 3, 4, 5]
     }
-
-
+# pip install fastapi uvicorn pydantic locust
+# uvicorn target_api:app --port 8000
+# locust -f locustfile.py --host http://127.0.0.1:8000
 @app.get("/slow")
 def slow_endpoint():
     """Simulates a slow database query taking 500 milliseconds."""
