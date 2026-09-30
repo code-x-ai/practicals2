@@ -42,6 +42,8 @@ def schedule(algorithm):
         if algorithm == "Round Robin":
             vm = i % 3
         else:  # Least Loaded
+            # pip install streamlit pandas plotly
+            # streamlit run cloud_monitor.py
             vm = load.index(min(load))
 
         exec_time = task.Workload / vms.MIPS[vm]
