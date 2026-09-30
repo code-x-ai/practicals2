@@ -29,6 +29,7 @@ for i, task in enumerate(tasks):
         vm["mips"],
         round(execution_time, 2)
     ])
+    # pip install tabulate
 
 headers = [
     "Task",
